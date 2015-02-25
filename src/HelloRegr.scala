@@ -15,6 +15,7 @@ object HelloRegr {
                  | 62.24.11.25 images.com 1358492167 - Whatup""".stripMargin.lines.mkString
 
       println (str1)
+//      println (str1)
 
     val apacheLogRegex =
       """^([\d.]+) (\S+) (\S+) \[([\w\d:/]+\s[+\-]\d{4})\] "(.+?)" (\d{3}) ([\d\-]+) "([^"]+)" "([^"]+)".*""".r
@@ -35,5 +36,7 @@ object HelloRegr {
         println (dateTime, threadId, processId)
       case _ => println ("null")
     }
+
+
   }
 }
